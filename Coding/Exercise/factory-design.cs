@@ -17,11 +17,11 @@ namespace Coding.Exercise
 
     public class PersonFactory
     {
-        private List<WeakReference<Person>> list = new();
+        private List<WeakReference<Person>> list = new List<WeakReference<Person>>();
         public Person CreatePerson(string name)
         {
             var instance = new Person(list.Count, name);
-            list.Add(new (instance));
+            list.Add(new WeakReference<Person>(instance));
             return instance;
         }
     }
