@@ -3,7 +3,7 @@ using Xunit;
 
 namespace Coding.Exercise;
 
-public class UnitTest1
+public class UnitTestBuild
 {
     [Fact]
     public void Test1()
