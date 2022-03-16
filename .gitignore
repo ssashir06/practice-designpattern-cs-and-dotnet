@@ -8,3 +8,5 @@ bin/
 obj/
 
 # End of https://www.toptal.com/developers/gitignore/api/dotnetcore
+
+.vs/

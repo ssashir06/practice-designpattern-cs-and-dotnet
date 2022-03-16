@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
-    <RootNamespace>udemy_design_pattern_in_cs_and_dotnet</RootNamespace>
+    <RootNamespace></RootNamespace>
     <Nullable>enable</Nullable>
 
     <IsPackable>false</IsPackable>
