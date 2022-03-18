@@ -8,7 +8,7 @@ using Xunit;
 
 namespace Coding.Exercise;
 
-public class UnitTestDeepcopy
+public class UnitTestPrototype
 {
     [Fact]
     public void Test1()
