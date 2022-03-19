@@ -19,7 +19,7 @@ namespace Coding.Exercise
 
         public WordToken this[int index]
         {
-            get => wordTokens[index];
+            get { return wordTokens[index]; }
         }
 
         public override string ToString()
@@ -36,7 +36,7 @@ namespace Coding.Exercise
                     sentencesNew.Add(sentences[i]);
                 }
             }
-            return string.Join(' ', sentencesNew);
+            return string.Join(" ", sentencesNew);
         }
 
         public class WordToken
