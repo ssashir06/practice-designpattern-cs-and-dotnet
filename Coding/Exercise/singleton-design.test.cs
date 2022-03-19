@@ -22,7 +22,7 @@ public class UnitTestSingleton
     [Fact]
     public void Test1()
     {
-        Assert.Equal(true, SingletonTester.IsSingleton(() => MySingletonClass1.Instance));
-        Assert.Equal(false, SingletonTester.IsSingleton(() => new object()));
+        Assert.True(SingletonTester.IsSingleton(() => MySingletonClass1.Instance));
+        Assert.False(SingletonTester.IsSingleton(() => new object()));
     }
 }
