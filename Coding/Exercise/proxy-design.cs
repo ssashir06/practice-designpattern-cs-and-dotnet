@@ -40,9 +40,9 @@ namespace Coding.Exercise
             this.person = person;
         }
 
-        public int Age { 
-            get => person.Age;
-            set => person.Age = value;
+        public int Age {
+            get { return person.Age; }
+            set { person.Age = value; }
         }
 
         public string Drink()
