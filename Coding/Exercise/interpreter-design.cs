@@ -65,8 +65,12 @@ namespace Coding.Exercise
 
         public Token(Type type, string text)
         {
+            if (text == null)
+            {
+                throw new ArgumentNullException(paramName: nameof(text));
+            }
             MyType = type;
-            Text = text ?? throw new ArgumentNullException(paramName: nameof(text));
+            Text = text;
         }
 
         public override string ToString()
