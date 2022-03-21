@@ -26,7 +26,7 @@ public class UnitTestVisitor
         var simple = new MultiplicationExpression(new Value(2), new Value(3));
         var ep = new ExpressionPrinter();
         ep.Visit(simple);
-        Assert.Equal("(2*3)", ep.ToString());
+        Assert.Equal("2*3", ep.ToString());
     }
 
     [Fact]
@@ -36,6 +36,6 @@ public class UnitTestVisitor
             new AdditionExpression(new Value(3), new Value(4)));
         var ep = new ExpressionPrinter();
         ep.Visit(simple);
-        Assert.Equal("(2*(3+4))", ep.ToString());
+        Assert.Equal("2*(3+4)", ep.ToString());
     }
 }

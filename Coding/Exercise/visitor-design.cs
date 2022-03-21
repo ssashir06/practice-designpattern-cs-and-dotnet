@@ -85,11 +85,9 @@ namespace Coding.Exercise
 
         public override void Visit(MultiplicationExpression me)
         {
-            sb.Append('(');
             me.LHS.Accept(this);
             sb.Append('*');
             me.RHS.Accept(this);
-            sb.Append(')');
         }
 
         public override string ToString()
