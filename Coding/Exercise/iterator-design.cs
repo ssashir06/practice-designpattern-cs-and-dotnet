@@ -6,8 +6,8 @@ namespace Coding.Exercise
     public class Node<T>
     {
         public T Value;
-        public Node<T>? Left, Right;
-        public Node<T>? Parent;
+        public Node<T> Left, Right;
+        public Node<T> Parent;
 
         public Node(T value)
         {
